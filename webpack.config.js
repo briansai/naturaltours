@@ -1,5 +1,5 @@
-const webpack = require('webpack');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const SRC_DIR = path.join(__dirname, '/client/src');
 const DIST_DIR = path.join(__dirname, '/client/dist');
@@ -11,11 +11,16 @@ module.exports = {
     path: DIST_DIR
   },
   devtool: 'source-map',
-  optimization: {
-    minimizer: [new UglifyJsPlugin()]
-  },
   module: {
     rules: [
+      {
+        test: /\.jsx?/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        resolve: {
+          extensions: ['.js', '.jsx']
+        }
+      },
       {
         test: /\.jsx?/,
         include: SRC_DIR,
