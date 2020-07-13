@@ -33,7 +33,7 @@
       text-transform: uppercase;
       margin-bottom: 3rem;
 
-      .heading-primary-main {
+      &-main {
         display: block;
         font-size: 6rem;
         font-weight: 400;
@@ -43,7 +43,7 @@
         animation: moveFromLeft 1s ease-out;
       }
 
-      .heading-primary-sub {
+      &-sub {
         display: block;
         font-size: 2rem;
         font-weight: 700;
@@ -53,31 +53,33 @@
     }
   }
 
-  .btn:link,
-  .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    font-size: 1.5rem;
+  .btn {
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      font-size: 1.5rem;
 
-    animation: moveFromBottom 0.8s ease-out;
-  }
+      animation: moveFromBottom 0.8s ease-out;
+    }
 
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0.6);
-  }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0.6);
+    }
 
-  .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
-  }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
+    }
 
-  .btn-white {
-    background-color: #fff;
-    color: #777;
+    &-white {
+      background-color: #fff;
+      color: #777;
+    }
   }
 }
 

@@ -26,7 +26,7 @@
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
-.header .text-box .heading-primary .heading-primary-main {
+.header .text-box .heading-primary-main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -34,15 +34,14 @@
   padding-left: 2rem;
   animation: moveFromLeft 1s ease-out;
 }
-.header .text-box .heading-primary .heading-primary-sub {
+.header .text-box .heading-primary-sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.87rem;
   animation: moveFromRight 1s ease-out;
 }
-.header .btn:link,
-.header .btn:visited {
+.header .btn:link, .header .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 4rem;
