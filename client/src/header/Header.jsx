@@ -11,6 +11,9 @@ export default () => (
         <span className="heading-primary-main">Nature</span>
         <span className="heading-primary-sub">is where life happens</span>
       </h1>
+      <a href="#" class="btn btn-white">
+        Discover our tours
+      </a>
     </div>
   </header>
 );
