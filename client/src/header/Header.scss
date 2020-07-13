@@ -13,11 +13,11 @@
 
   .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 
     .logo {
-      height: 35px;
+      height: 3.5rem;
     }
   }
 
@@ -31,24 +31,24 @@
     .heading-primary {
       color: #fff;
       text-transform: uppercase;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
 
       .heading-primary-main {
         display: block;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 35px;
-        padding-left: 20px;
+        letter-spacing: 3.5rem;
+        padding-left: 2rem;
 
-        animation: moveFromLeft 1.8s ease-out;
+        animation: moveFromLeft 1s ease-out;
       }
 
       .heading-primary-sub {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 8.7px;
-        animation: moveFromRight 1.8s ease-out;
+        letter-spacing: 0.87rem;
+        animation: moveFromRight 1s ease-out;
       }
     }
   }
@@ -57,21 +57,22 @@
   .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 15px 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
+    font-size: 1.5rem;
 
-    animation: moveFromBottom 1.5s ease-out;
+    animation: moveFromBottom 0.8s ease-out;
   }
 
   .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0.6);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0.6);
   }
 
   .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
   }
 
   .btn-white {
@@ -107,7 +108,7 @@
 @keyframes moveFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5rem);
   }
 
   100% {
