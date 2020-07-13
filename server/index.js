@@ -11,13 +11,17 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 const startConnection = async () => {
   try {
     await db.connect();
-
-    app.listen(process.env.PORT, () => {
-      console.log(`Listening on port: ${process.env.PORT}`);
-    });
   } catch (err) {
-    throw new Error();
+    throw new Error('Database connection not working');
   }
 };
 
-startConnection();
+startConnection()
+  .then(() => {
+    app.listen(process.env.PORT, () => {
+      console.log(`Listening on port: ${process.env.PORT}`);
+    });
+  })
+  .catch(err => {
+    console.log(err);
+  });
