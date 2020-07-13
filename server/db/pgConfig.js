@@ -1,6 +1,6 @@
 const Pool = require('pg').Pool;
 const dotenv = require('dotenv');
-const envConfig = dotenv.config({ silent: true });
+dotenv.config({ silent: true });
 
 const pool = new Pool({
   database: process.env.DB_DATABASE,
