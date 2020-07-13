@@ -1,3 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Header from '../header/Header';
+import './App.scss';
 
-export default () => <Fragment>Hello World!</Fragment>;
+export default () => (
+  <div className="app">
+    <Header />
+  </div>
+);

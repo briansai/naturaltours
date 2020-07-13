@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -50,8 +51,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: /node_modules/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          // { loader: MiniCssExtractPlugin.loader },
+          'style-loader',
+          'css-loader'
+        ]
       },
       {
         test: /\.(png|jpg)$/,
@@ -59,7 +63,7 @@ module.exports = {
           {
             options: {
               name: '[name].[ext]',
-              outputPath: 'images/'
+              outputPath: 'img/'
             },
             loader: 'file-loader'
           }
