@@ -8,7 +8,7 @@ export default () => (
         Exciting tours for adventurous people
       </h2>
     </div>
-    <div className="about-description">
+    <div className="about-flex">
       <div className="about-text">
         <h3 className="heading-tertiary">
           You're going to fall in love with nature
@@ -32,17 +32,17 @@ export default () => (
       <div className="about-img">
         <div className="composition">
           <img
-            src="img/nat-1-large.jpg"
+            src="img/nat-1.jpg"
             alt="Photo 1"
             className="composition-photo p1"
           />
           <img
-            src="img/nat-2-large.jpg"
+            src="img/nat-2.jpg"
             alt="Photo 2"
             className="composition-photo p2"
           />
           <img
-            src="img/nat-3-large.jpg"
+            src="img/nat-3.jpg"
             alt="Photo 3"
             className="composition-photo p3"
           />

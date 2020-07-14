@@ -117,37 +117,37 @@
   color: transparent;
   letter-spacing: 0.2rem;
 }
-.section-about .about-description {
+.section-about .about-flex {
   display: flex;
   justify-content: space-evenly;
 }
-.section-about .about-description .about-text {
+.section-about .about-flex .about-text {
   margin-left: 10%;
   margin-right: 2%;
   width: 55%;
 }
-.section-about .about-description .about-text .heading-tertiary {
+.section-about .about-flex .about-text .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
 }
-.section-about .about-description .about-text .paragraph {
+.section-about .about-flex .about-text .paragraph {
   margin-top: 0.8rem;
   font-size: 1.6rem;
 }
-.section-about .about-description .about-text .paragraph:not(:last-child) {
+.section-about .about-flex .about-text .paragraph:not(:last-child) {
   margin-bottom: 3rem;
 }
-.section-about .about-description .about-img {
+.section-about .about-flex .about-img {
   margin-left: 2%;
   margin-right: 10%;
   width: 45%;
 }
-.section-about .about-description .about-img .composition {
+.section-about .about-flex .about-img .composition {
   position: relative;
 }
-.section-about .about-description .about-img .composition-photo {
+.section-about .about-flex .about-img .composition-photo {
   width: 55%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
@@ -156,26 +156,68 @@
   transition: all 0.2s;
   outline-offset: 1rem;
 }
-.section-about .about-description .about-img .composition-photo:hover {
+.section-about .about-flex .about-img .composition-photo:hover {
   outline: 1rem solid #55c57a;
   transform: scale(1.05) translateY(-2rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
 }
-.section-about .about-description .about-img .composition .p1 {
+.section-about .about-flex .about-img .composition .p1 {
   left: 0;
   top: 2rem;
 }
-.section-about .about-description .about-img .composition .p2 {
+.section-about .about-flex .about-img .composition .p2 {
   right: 0;
   top: 6rem;
 }
-.section-about .about-description .about-img .composition .p3 {
+.section-about .about-flex .about-img .composition .p3 {
   left: 20%;
   top: 12rem;
 }
-.section-about .about-description .about-img .composition:hover .section-about .about-description .about-img .composition-photo:not(:hover) {
+.section-about .about-flex .about-img .composition:hover .section-about .about-flex .about-img .composition-photo:not(:hover) {
   transform: scale(0.95);
+}
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 4rem;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(125, 213, 111, 0.6), #28b485), url(img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -11rem;
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+.section-features .features-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-features .features-flex .feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  width: 15%;
+  min-height: 10%;
+  transition: transform 0.3s;
+}
+.section-features .features-flex .feature-box-icon {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  color: #55c57a;
+}
+.section-features .features-flex .feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
 }
 html {
   font-size: 62.5%;
