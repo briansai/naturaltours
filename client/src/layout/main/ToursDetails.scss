@@ -1,0 +1,54 @@
+@import '../../utils/scss/variables';
+@import '../../utils/scss/utilities';
+
+.tour-details {
+  background-color: $color-grey-light-1;
+  border: 1px solid #f1f1f1;
+  height: 15%;
+  padding-left: 1.5rem;
+
+  .tour-details-flex {
+    display: flex;
+    justify-content: space;
+    padding: 1.5rem;
+
+    .tour-details-items {
+      min-width: 48%;
+    }
+
+    .btn-container {
+      width: 29%;
+      padding-left: 2.5rem;
+
+      .btn {
+        &:link,
+        &:visited {
+          background-color: $color-primary-dark;
+          color: $color-white;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 1rem 3rem;
+          display: inline-block;
+          border-radius: 10rem;
+          font-size: 1.5rem;
+          transition: all 0.5s;
+        }
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0.6);
+        }
+
+        &:active {
+          transform: translateY(-1px);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
+        }
+
+        &-white {
+          background-color: #fff;
+          color: #777;
+        }
+      }
+    }
+  }
+}

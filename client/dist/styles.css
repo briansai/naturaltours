@@ -101,12 +101,7 @@
   margin-bottom: 4rem;
 }
 
-.section-about {
-  background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh;
-}
-.section-about .heading-secondary {
+.heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -117,6 +112,19 @@
   color: transparent;
   letter-spacing: 0.2rem;
 }
+
+.heading-tertiary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
 .section-about .about-flex {
   display: flex;
   justify-content: space-evenly;
@@ -125,12 +133,6 @@
   margin-left: 10%;
   margin-right: 2%;
   width: 55%;
-}
-.section-about .about-flex .about-text .heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
 }
 .section-about .about-flex .about-text .paragraph {
   margin-top: 0.8rem;
@@ -185,6 +187,25 @@
   margin-bottom: 4rem;
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+}
+
+.heading-tertiary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(125, 213, 111, 0.6), #28b485), url(img/nat-4.jpg);
@@ -218,6 +239,167 @@
 }
 .section-features .features-flex .feature-box:hover {
   transform: translateY(-1.5rem) scale(1.03);
+}
+.tours-info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+.tours-info-flex .tours-info-content {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+.tours-info-flex .tours-info-content .tours-info-text {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 4rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+}
+
+.heading-tertiary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.tour-details {
+  background-color: #f7f7f7;
+  border: 1px solid #f1f1f1;
+  height: 15%;
+  padding-left: 1.5rem;
+}
+.tour-details .tour-details-flex {
+  display: flex;
+  justify-content: space;
+  padding: 1.5rem;
+}
+.tour-details .tour-details-flex .tour-details-items {
+  min-width: 48%;
+}
+.tour-details .tour-details-flex .btn-container {
+  width: 29%;
+  padding-left: 2.5rem;
+}
+.tour-details .tour-details-flex .btn-container .btn:link, .tour-details .tour-details-flex .btn-container .btn:visited {
+  background-color: #28b485;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+.tour-details .tour-details-flex .btn-container .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem #000001;
+}
+.tour-details .tour-details-flex .btn-container .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem black;
+}
+.tour-details .tour-details-flex .btn-container .btn-white {
+  background-color: #fff;
+  color: #777;
+}
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 4rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+}
+
+.heading-tertiary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 20rem 0 50rem 0;
+  margin-top: -10rem;
+  text-align: center;
+}
+.section-tours .tours-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.section-tours .tours-flex .tours-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-align: left;
+  max-width: 25%;
+}
+.section-tours .tours-flex .tours-box .tours-img-overlay {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(125, 213, 111, 0.6), #28b485);
+  background-size: cover;
+  text-transform: uppercase;
+  text-align: right;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  line-height: 0.8;
+}
+.section-tours .tours-flex .tours-box .tours-img-overlay .card-heading {
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  width: 50%;
+  height: auto;
+}
+.section-tours .tours-flex .tours-box .tours-img-overlay .card-heading-span {
+  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.6), rgba(40, 180, 133, 0.6));
+}
+.section-tours .tours-flex .tours-box .tours-img-overlay .tours-img {
+  opacity: 0.2;
+}
+.section-tours .tours-flex .tours-box .tours-text {
+  padding: 2rem;
+  min-height: 25%;
+}
+.section-tours .tours-flex .tours-box .tours-text .tours-para {
+  margin-top: 0;
+  font-style: italic;
 }
 html {
   font-size: 62.5%;

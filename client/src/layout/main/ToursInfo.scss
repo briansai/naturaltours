@@ -1,0 +1,16 @@
+.tours-info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 2rem;
+
+  .tours-info-content {
+    width: 40%;
+    margin-bottom: 2rem;
+
+    .tours-info-text {
+      padding-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}

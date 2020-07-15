@@ -1,10 +1,12 @@
 import React from 'react';
-import About from './about/About';
-import Features from './features/Features';
+import About from './About';
+import Features from './Features';
+import Tours from './Tours';
 
-export default () => (
+export default ({ tours }) => (
   <main>
     <About />
     <Features />
+    <Tours tours={tours} />
   </main>
 );
