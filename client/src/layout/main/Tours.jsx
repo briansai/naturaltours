@@ -11,18 +11,12 @@ export default ({ tours }) => {
         <h2 className="heading-secondary">Live a healthier life</h2>
       </div>
       <div className="tours-flex">
-        {toursData.map(tour => {
+        {toursData.map((tour, index) => {
           const { adventure, detail, image, difficulty, days, ...rest } = tour;
           return (
-            <div className="tours-box">
+            <div key={`${tour}-${index}`} className="tours-box">
               <div className="tours-img-overlay">
-                <img
-                  className="tours-img"
-                  height="220"
-                  width="350"
-                  src={image}
-                  alt={image}
-                />
+                <img className="tours-img" src={image} alt={image} />
                 <div className="card-heading">
                   <span className="card-heading-span">{adventure}</span>
                 </div>

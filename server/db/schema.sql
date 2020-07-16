@@ -14,7 +14,7 @@ CREATE TABLE adventure (
   difficulty VARCHAR(10) NOT NULL,
   stops INT NOT NULL,
   detail VARCHAR(100) NOT NULL,
-  about VARCHAR(300) NOT NULL,
+  about TEXT NOT NULL,
   max_people INT NOT NULL,
   price INT NOT NULL,
   rating INT NOT NULL,

@@ -3,7 +3,6 @@ import moment from 'moment';
 import './ToursInfo.scss';
 
 export default ({ tour }) => {
-  console.log(tour);
   const { city, country, start_date, stops, max_people } = tour;
   const location = `${city}, ${country}`;
   const date = moment(start_date).format('MMM yyyy');
@@ -13,7 +12,7 @@ export default ({ tour }) => {
       icon: 'https://unpkg.com/@icon/linea-basic/icons/geolocalize-01.svg'
     },
     {
-      item: `Stops: ${stops}`,
+      item: `stops: ${stops}`,
       icon: 'https://unpkg.com/@icon/linea-basic/icons/flag1.svg'
     },
     {
@@ -27,12 +26,12 @@ export default ({ tour }) => {
   ];
   return (
     <div className="tours-info-flex">
-      {entries.map(entry => {
+      {entries.map((entry, index) => {
         const { item, icon } = entry;
         return (
-          <div className="tours-info-content">
+          <div key={`tour-${index}`} className="tours-info-content">
             <span>
-              <img height="16" width="16" src={icon} />
+              <img height="16" width="16" src={icon} alt={`tour-${index}`} />
             </span>
             <span className="tours-info-text">{item}</span>
           </div>

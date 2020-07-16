@@ -1,32 +1,34 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
+import Modal from '../../components/Modal';
 import './ToursDetails.scss';
 
 export default ({ tour }) => {
-  const { price, rating } = tour;
+  const [details, setDetails] = useState(false);
+  const { price, rating, about } = tour;
   const ratings = rating > 1 ? 'ratings' : 'rating';
+  const handleClick = () => {
+    setDetails(!details);
+  };
   return (
-    <div className="tour-details">
-      <div className="tour-details-flex">
-        <div className="tour-details-items">
-          <div>
-            <span>
-              <b>{`$${price}`}</b>
-            </span>{' '}
-            <span>per person</span>
+    <Fragment>
+      <div className="tour-details">
+        <div className="tour-details-flex">
+          <div className="tour-details-items">
+            <div>
+              <b>{`$${price}`}</b> per person
+            </div>
+            <div>
+              <b>{`${rating}`}</b> {ratings}
+            </div>
           </div>
-          <div>
-            <span>
-              <b>{`${rating}`}</b>
-            </span>{' '}
-            <span>{ratings}</span>
+          <div className="btn-container">
+            <button onClick={handleClick} className="btn">
+              Details
+            </button>
           </div>
-        </div>
-        <div className="btn-container">
-          <a href="#" className="btn btn-white">
-            Details
-          </a>
         </div>
       </div>
-    </div>
+      {details && <Modal about={about} handleClick={handleClick} />}
+    </Fragment>
   );
 };

@@ -3,6 +3,7 @@ import Header from '../layout/header/Header';
 import Main from '../layout/main/Main';
 import { toursAPI } from '../api/toursAPI';
 import './App.scss';
+import Modal from '../components/Modal';
 
 export default () => {
   const [tours, setTours] = useState([]);
