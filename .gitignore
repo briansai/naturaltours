@@ -5,4 +5,3 @@ server/db/feature.csv
 server/db/featureGenerator.js
 server/db/dataGenerator.js
 server/db/data.csv
-server/db/schema.sql
